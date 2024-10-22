@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Bootstrap icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- olhar com atenção -->
+  <link href="css/styles.min.css" rel="stylesheet" />
+  <title>Primeira Moda</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+
+      <!-- Seção superior: Logo, pesquisa e carrinho -->
+      <div class="nav-top">
+        <a href=""><img src="/assets/logoPrimeiraModa.svg" alt="Logo Primeira Moda" id="logo-site"></a>
+        <!-- Botões Institucional e Minha Conta -->
+
+        <div class="input-pesquisa">
+          <input type="text" placeholder="Busque na loja">
+          <img src="/assets/icon-pesquisa.svg" alt="Ícone de pesquisa" class="icon-pesquisa">
+        </div>
+
+        <nav class="botoes-dropdown">
+          <ul>
+            <li class="menu-item">
+              <a class="dropdown-btn">Institucional <img src="/assets/icon-abrir-link.svg" alt="">
+                <ul class="submenu">
+                  <li><a href="#"><img src="/assets/icon-home.svg" class="icones-submenu">Início<img
+                        src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                  <li><a href="#"><img src="/assets/icon-sobre.svg" class="icones-submenu">Quem Somos<img
+                        src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                  <li><a href="#"><img src="/assets/icon-fale-conosco.svg" class="icones-submenu">Fale Conosco<img
+                        src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li class="menu-item">
+              <a class="dropdown-btn">Minha conta <img src="/assets/icon-abrir-link.svg" alt=""></a>
+              <ul class="submenu">
+                <li><a href="#"><img src="/assets/icon-registro.svg" class="icones-submenu"></i>Criar conta<img
+                      src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                <li><a href="#"><img src="/assets/icon-login.svg" class="icones-submenu"></i>Entrar<img
+                      src="/assets/icon-abrir-link.svg" alt=""></a></li>
+              </ul>
+              </a>
+            </li>
+          </ul>
+
+        </nav>
+        <div id="carrinho">
+          <a href="#"><img src="/assets/icon-carrinho-btn.svg" alt=""></a>
+          <ul class="submenu">
+            <li><a href="#">Item</a></li>
+            <div class="total-compra">
+              <p>Total:</p>
+              <p>R$450,00</p>
+            </div>
+            <div class="botoes-compra">
+              <button type="button" class="btn btn-primary">Ver carrinho</button>
+              <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+          </ul>
+        </div>
+
+
+      </div>
+
+      <!-- Seção inferior: Botões e links de navegação -->
+      <nav class="menu">
+        <div id="menu-contraido">
+          <!-- Checkbox que controla a exibição do menu -->
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle">
+            <!-- Ícone de hambúrguer -->
+            <span></span>
+          </label>
+          <ul>
+            <li class="menu-item-nav-principal">
+              <a href="#">Meninas</a>
+              <ul class="submenu">
+                <div class="submenu-content">
+                  <li>
+                    <ul class="submenu-links">
+                      <li class="has-sub-options">
+                        <a href="#">Bodies <img src="/assets/icon-abrir-link.svg" alt=""></a>
+                        <div class="sub-options">
+                          <a href="#">Manga curta </a>
+                          <a href="#">Manga longa </a>
+                        </div>
+                      </li>
+                      <li><a href="#">Conjuntos</a></li>
+                      <li><a href="#">Macacões</a></li>
+                    </ul>
+                  </li>
+                  <div class="submenu-image">
+                    <img src="/assets/imagem-bebe.jpg" alt="Imagem de bebê">
+                  </div>
+                </div>
+              </ul>
+            </li>
+
+
+            <li class="menu-item-nav-principal">
+              <a href="#">Meninos</a>
+              <ul class="submenu">
+                <div class="submenu-content">
+                  <li>
+                    <ul class="submenu-links">
+                      <li class="has-sub-options">
+                        <a href="#">Bodies <img src="/assets/icon-abrir-link.svg" alt=""></a>
+                        <div class="sub-options">
+                          <a href="#">Manga curta </a>
+                          <a href="#">Manga longa </a>
+                        </div>
+                      </li>
+                      <li><a href="#">Conjuntos</a></li>
+                      <li><a href="#">Macacões</a></li>
+                    </ul>
+                  </li>
+                  <div class="submenu-image">
+                    <img src="/assets/imagem-bebe.jpg" alt="Imagem de bebê">
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Alimentação</a></li>
+            <li><a href="#">Higiene</a></li>
+            <li><a href="#">Mamãe</a></li>
+            <li><a href="#">Ofertas</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="slider">
+      <div class="slider-content">
+
+        <input type="radio" name="btn-radio" id="radio1" checked>
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div>
+
+        </div>
+        <div class="slide-box primeiro">
+          <img class="img-desktop" src="assets/fundo-slide1.jpg" alt="slide 1">
+          <div class="produto-carrossel">
+            <h1>Teste</h1>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="assets/fundo-slide2.jpg" alt="slide 2">
+          <div class="produto-carrossel">
+            <h1>Teste</h1>
+          </div>
+        </div>
+
+        <div class="slide-box">
+          <img class="img-desktop" src="assets/fundo-slide3.jpg" alt="slide 3">
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="infos-centrais-home">
+      <div class="info-secao-central">
+        <img src="/assets/icon-boleto.svg" alt="Ícone boleto">
+        <div>
+          <h3>Pagamento por boleto</h3>
+          <p>Mais um meio de pagamento para facilitar</p>
+        </div>
+
+      </div>
+      <div class="info-secao-central">
+        <img src="/assets/icon-cartao.svg" alt="Ícone cartão">
+        <div>
+          <h3>Até 3 vezes</h3>
+          <p>Com todos os cartões de crédito</p>
+        </div>
+
+      </div>
+      <div class="info-secao-central">
+        <img src="/assets/icon-seguranca.svg" alt="Ícone segurança">
+        <div>
+          <h3>Site Seguro</h3>
+          <p>Protegemos seus dados</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias-principais">
+      <h2>Categorias Principais</h2>
+      <div class="categorias-principais-botoes">
+        <button type="button" class="btn btn-primary" id="botao-meninas">Meninas</button>
+        <button type="button" class="btn btn-primary" id="botao-meninos">Meninos</button>
+        <button type="button" class="btn btn-primary" id="botao-acessorios">Acessórios</button>
+        <button type="button" class="btn btn-primary" id="botao-higiene-e-cuidado">Higiene e Cuidados com o
+          Bebê</button>
+        <button type="button" class="btn btn-primary" id="botao-mamae">Mamãe</button>
+        <button type="button" class="btn btn-primary" id="botao-ofertas">Ofertas</button>
+      </div>
+    </section>
+
+    <section class="card-grid">
+      <h2>Destaques</h2>
+      <div class="grid-container">
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <a href="./item.html"><button type="button" class="btn">Que fofo, eu quero!</button></a>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <a href="./item.html"><button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button></a>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="image-container">
+            <img src="/assets/imagemCards.png" alt="Produto">
+            <div class="button-group">
+              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
+              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
+            </div>
+            <div class="hover-buttons">
+              <button type="button" class="btn">Que fofo, eu quero!</button>
+            </div>
+            <div class="bottom-buttons">
+              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                  id="icon-favorito"></button>
+              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
+            </div>
+          </div>
+          <h4>Kit Bodies manga longa carters 4 peças</h4>
+          <button type="button" class="btn btn-info">34% OFF</button>
+          <p>R$114,90</p>
+          <h1>R$75,90</h1>
+          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+          <div class="hover-buttons-mobile">
+            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+          </div>
+        </article>
+      </div>
+      <button type="button" class="btn btn-primary" id="ver-mais">Ver mais produtos</button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="newsletter">
+      <div class="titulo-newsletter">
+        <i class="bi bi-envelope-open" id="newsletter-logo"></i>
+        <h3>Nossa Newsletter</h3>
+      </div>
+      <input type="email" placeholder="E-mail">
+      <input type="text" placeholder="Nome completo">
+      <button type="button" class="btn btn-primary" id="botao-newsletter">Me inscrever
+        <img src="/assets/icon-newsletter.svg" alt="">
+      </button>
+    </div>
+
+    <!-- Primeira divisão com 4 seções -->
+    <div class="secao-1-footer">
+      <section>
+        <h5>Meninos</h5>
+        <ul>
+          <li><a href="#">Bodies</a></li>
+          <li><a href="#">Conjuntos</a></li>
+          <li><a href="#">Macacões</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Meninas</h5>
+        <ul>
+          <li><a href="#">Bodies</a></li>
+          <li><a href="#">Conjuntos</a></li>
+          <li><a href="#">Macacões</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Acessórios</h5>
+        <ul>
+          <li><a href="#">Brinquedos/Mordedores</a></li>
+          <li><a href="#">Chupetas</a></li>
+          <li><a href="#">Cobertores/Mantas</a></li>
+          <li><a href="#">Babá Eletrônica/Termômetros</a></li>
+          <li><a href="#">Segurança</a></li>
+          <li><a href="#">Skip Hop</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Alimentação</h5>
+        <ul>
+          <li><a href="#">Mamadeiras</a></li>
+          <li><a href="#">Utensílios</a></li>
+          <li><a href="#">Vitaminas</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Segunda divisão com 3 seções -->
+    <div class="secao-2-footer">
+      <section>
+        <h5>Higiene e cuidados<br>com o bebê</h5>
+        <ul>
+          <li><a href="#">Banho</a></li>
+          <li><a href="#">Cólicas</a></li>
+          <li><a href="#">Alívio de gripes e resfriados</a></li>
+          <li><a href="#">Pele</a></li>
+          <li><a href="#">Dentes</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Mamãe</h5>
+        <ul>
+          <li><a href="#">Gravidez</a></li>
+          <li><a href="#">Amamentação</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Ofertas</h5>
+      </section>
+      <section>
+        <h5>Institucional</h5>
+        <ul>
+          <li><a href="#">Página inicial</a></li>
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Criar conta</a></li>
+          <li><a href="#">Entrar</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="redes-sociais">
+      <a href="">
+        <img src="/assets/icon-facebook.svg" alt="">
+
+      </a>
+      <a href="">
+        <img src="/assets/icon-instagram.svg" alt="">
+
+      </a>
+    </div>
+    </div>
+    <section class="infos-centrais-home">
+      <div class="info-secao-central">
+        <img src="/assets/icon-boleto.svg" alt="Ícone boleto">
+        <div>
+          <h3>Pagamento por boleto</h3>
+          <p>Mais um meio de pagamento para facilitar</p>
+        </div>
+
+      </div>
+      <div class="info-secao-central">
+        <img src="/assets/icon-cartao.svg" alt="Ícone cartão">
+        <div>
+          <h3>Até 3 vezes</h3>
+          <p>Com todos os cartões de crédito</p>
+        </div>
+
+      </div>
+      <div class="info-secao-central">
+        <img src="/assets/icon-seguranca.svg" alt="Ícone segurança">
+        <div>
+          <h3>Site Seguro</h3>
+          <p>Protegemos seus dados</p>
+        </div>
+      </div>
+    </section>
+    <p id="copyright">Copyright Primeira Moda Roupas e Produtos Importados Ltda - 2020.
+      Todos os direitos reservados.
+    </p>
+    <section class="botoes-rodape-mobile">
+      <div>
+        <a href="">
+          <h3>Institucional</h3><i class="bi bi-plus"></i>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <h3>Minha Conta</h3><i class="bi bi-plus"></i>
+        </a>
+      </div>
+      <div>
+        <a href="">
+          <h3>Fale Conosco</h3><i class="bi bi-plus"></i>
+        </a>
+      </div>
+      <div class="redes-sociais-mobile">
+        <h3>Redes Sociais</h3>
+        <div class="logos-redes-sociais-mobile">
+          <a href="">
+            <img src="/assets/icon-facebook.svg" alt="">
+          </a>
+          <a href="">
+            <img src="/assets/icon-instagram.svg" alt="">
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+  <script>
+    // Script para o menu hamburguer (se necessário adicionar funcionalidade futuramente)
+  </script>
+</body>
+
+</html>
