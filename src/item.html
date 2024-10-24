@@ -2,417 +2,689 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- Bootstrap icons-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <!-- olhar com atenção -->
-  <link href="css/styles.min.css" rel="stylesheet" />
-  <title>Primeira Moda</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- olhar com atenção -->
+    <link href="css/styles.min.css" rel="stylesheet" />
+    <title>Primeira Moda</title>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header>
-    <div class="container">
+    <!-- Navbar -->
+    <header>
+        <div class="container">
 
-      <!-- Seção superior: Logo, pesquisa e carrinho -->
-      <div class="nav-top">
-        <a href=""><img src="/assets/logoPrimeiraModa.svg" alt="Logo Primeira Moda" id="logo-site"></a>
-        <!-- Botões Institucional e Minha Conta -->
+            <!-- Seção superior: Logo, pesquisa e carrinho -->
+            <div class="nav-top">
+                <a href="/"><img src="/assets/logoPrimeiraModa.svg" alt="Logo Primeira Moda" id="logo-site"></a>
+                <!-- Botões Institucional e Minha Conta -->
 
-        <div class="input-pesquisa">
-          <input type="text" placeholder="Busque na loja">
-          <img src="/assets/icon-pesquisa.svg" alt="Ícone de pesquisa" class="icon-pesquisa">
+                <div class="input-pesquisa">
+                    <input type="text" placeholder="Busque na loja">
+                    <img src="/assets/icon-pesquisa.svg" alt="Ícone de pesquisa" class="icon-pesquisa">
+                </div>
+
+                <nav class="botoes-dropdown">
+                    <ul>
+                        <li class="menu-item">
+                            <a class="dropdown-btn">Institucional <img src="/assets/icon-abrir-link.svg" alt="">
+                                <ul class="submenu">
+                                    <li><a href="#"><img src="/assets/icon-home.svg" class="icones-submenu">Início<img
+                                                src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="/assets/icon-sobre.svg" class="icones-submenu">Quem
+                                            Somos<img src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="/assets/icon-fale-conosco.svg" class="icones-submenu">Fale
+                                            Conosco<img src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="menu-item">
+                            <a class="dropdown-btn">Minha conta <img src="/assets/icon-abrir-link.svg" alt=""></a>
+                            <ul class="submenu">
+                                <li><a href="#"><img src="/assets/icon-registro.svg" class="icones-submenu"></i>Criar
+                                        conta<img src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                                <li><a href="#"><img src="/assets/icon-login.svg" class="icones-submenu"></i>Entrar<img
+                                            src="/assets/icon-abrir-link.svg" alt=""></a></li>
+                            </ul>
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+                <div id="carrinho">
+                    <a href="#"><img src="/assets/icon-carrinho-btn.svg" alt=""></a>
+                    <ul class="submenu">
+                        <li><a href="#">Item</a></li>
+                        <div class="total-compra">
+                            <p>Total:</p>
+                            <p>R$450,00</p>
+                        </div>
+                        <div class="botoes-compra">
+                            <button type="button" class="btn btn-primary">Ver carrinho</button>
+                            <button type="button" class="btn btn-primary">Comprar</button>
+                        </div>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!-- Seção inferior: Botões e links de navegação -->
+            <nav class="menu">
+                <div id="menu-contraido">
+                    <!-- Checkbox que controla a exibição do menu -->
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle">
+                        <!-- Ícone de hambúrguer -->
+                        <span></span>
+                    </label>
+                    <ul>
+                        <li class="menu-item-nav-principal">
+                            <a href="#">Meninas</a>
+                            <ul class="submenu">
+                                <div class="submenu-content">
+                                    <li>
+                                        <ul class="submenu-links">
+                                            <li class="has-sub-options">
+                                                <a href="#">Bodies <img src="/assets/icon-abrir-link.svg" alt=""></a>
+                                                <div class="sub-options">
+                                                    <a href="#">• Manga curta </a>
+                                                    <a href="#">• Manga longa </a>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">Conjuntos</a></li>
+                                            <li><a href="#">Macacões</a></li>
+                                        </ul>
+                                    </li>
+                                    <div class="submenu-image">
+                                        <img src="/assets/imagem-bebe.jpg" alt="Imagem de bebê">
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+
+
+                        <li class="menu-item-nav-principal">
+                            <a href="#">Meninos</a>
+                            <ul class="submenu">
+                                <div class="submenu-content">
+                                    <li>
+                                        <ul class="submenu-links">
+                                            <li class="has-sub-options">
+                                                <a href="#">Bodies <img src="/assets/icon-abrir-link.svg" alt=""></a>
+                                                <div class="sub-options">
+                                                    <a href="#">• Manga curta </a>
+                                                    <a href="#">• Manga longa </a>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">Conjuntos</a></li>
+                                            <li><a href="#">Macacões</a></li>
+                                        </ul>
+                                    </li>
+                                    <div class="submenu-image">
+                                        <img src="/assets/imagem-bebe.jpg" alt="Imagem de bebê">
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Alimentação</a></li>
+                        <li><a href="#">Higiene</a></li>
+                        <li><a href="#">Mamãe</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="caminho">
+            <a href="/"><img src="/assets/icon-home-dark.svg" alt=""></a>
+            <img src="/assets/icon-abrir-link-dark.svg" alt="">
+            <a href="#">
+                <p>Bodies</p>
+            </a>
+            <img src="/assets/icon-abrir-link-dark.svg" alt="">
+            <a href="#">
+                <p>manga Larga</p>
+            </a>
+            <img src="/assets/icon-abrir-link-dark.svg" alt="">
+            <a href=""><strong>Kit Bodies manga longa Basics Carters 4 peças</strong></a>
         </div>
 
-        <nav class="botoes-dropdown">
-          <ul>
-            <li class="menu-item">
-              <a class="dropdown-btn">Institucional <img src="/assets/icon-abrir-link.svg" alt="">
-                <ul class="submenu">
-                  <li><a href="#"><img src="/assets/icon-home.svg" class="icones-submenu">Início<img
-                        src="/assets/icon-abrir-link.svg" alt=""></a></li>
-                  <li><a href="#"><img src="/assets/icon-sobre.svg" class="icones-submenu">Quem Somos<img
-                        src="/assets/icon-abrir-link.svg" alt=""></a></li>
-                  <li><a href="#"><img src="/assets/icon-fale-conosco.svg" class="icones-submenu">Fale Conosco<img
-                        src="/assets/icon-abrir-link.svg" alt=""></a></li>
+        <section class="infos-produto">
+            <div class="fotos-produto">
+                <div class="fotos-detalhes"><img src="/assets/bodie-1.svg" alt=""><img src="/assets/bodie-2.svg"
+                        alt=""><img src="/assets/bodie-3.svg" alt=""><img src="/assets/bodie-4.svg" alt=""></div>
+                <div class="image-container">
+                    <img src="/assets/imagemCards.png" alt="Produto">
+                    <div class="button-group-infos">
+                        <button type="button" class="btn btn-info" id="botao-desconto"><strong>34% OFF</strong>
+                        </button>
+                        <button type="button" class="btn btn-info"
+                            id="botao-oferta-card"><strong>OFERTA</strong></button>
+                    </div>
+                </div>
+            </div>
+            <div class="secao-compra">
+                <h3 id="nome-produto">Kit Bodies manga longa Basics Carters 4 peças</h3>
+                <h5>R$114,90</h5>
+                <div class="pagamento">
+                    <h3 id="preco">R$75,90</h3>
+                    <p>3X de <span id="parcela"><a href=""></a>R$25,30</span> Sem juros </p>
+                    <button type="button" class="btn btn-link" id="botao-meios-pagamento">Ver meios de
+                        pagamento</button>
+                </div>
+                <div class="tamanho-cor">
+                    <div id="tamanho">
+                        <p>Tamanho:</p>
+                        <button type="button" class="btn btn-info"><strong>3M</strong> </button>
+                        <button type="button" class="btn btn-info"><strong>6M</strong> </button>
+                        <button type="button" class="btn btn-info"><strong>9M</strong> </button>
+                    </div>
+                    <div id="cor">
+                        <p>Cor:</p>
+                        <button type="button" class="btn btn-info" id="botao-cor-branca"><strong>Branco</strong>
+                        </button>
+                        <button type="button" class="btn btn-info" id="botao-cor-azul"><strong>Azul</strong> </button>
+                        <button type="button" class="btn btn-info" id="botao-cor-cinza"><strong>Cinza</strong> </button>
+                        <button type="button" class="btn btn-info" id="botao-cor-preto"><strong>Preto</strong> </button>
+                        <button type="button" class="btn btn-info" id="botao-cor-multi"><strong>Multi</strong> </button>
+                    </div>
+
+                </div>
+                <div class="quantidade-comprar">
+                    <div class="counter">
+                        <p id="quantidade-itens">Quantidade</p>
+                        <div id="botoes-numero-contador">
+                            <i class="bi bi-dash remove"></i>
+                            <span class="number">0</span>
+                            <i class="bi bi-plus add"></i>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn btn-link" id="botao-compra">
+                        <img src="/assets/icon-carrinho.svg" alt="Ícone carrinho">Comprar agora
+                    </button>
+
+                </div>
+                <div class="compartilhar-item">
+                    <p>Compartilhar:</p>
+                    <a href=""><img src="/assets/icon-facebook.svg" alt=""></a>
+                    <a href=""><img src="/assets/icon-instagram.svg" alt=""></a>
+                    <a href=""><img src="/assets/icon-instagram.svg" alt=""></a>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="nav-tabs-container">
+            <ul class="nav-tabs">
+                <li class="nav-tab active"><a href="#descricao">Descrição</a></li>
+                <li class="nav-tab"><a href="#pagamento">Formas de pagamento</a></li>
+                <li class="nav-tab"><a href="#comentarios">Comentários</a></li>
+                <li class="nav-tab"><a href="#tabela-medidas">Tabela de Medidas</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="descricao" class="tab-pane active">
+                    <p>O Kit Bodies Manga Longa Basics Carters 4 peças é produzido em algodão com tecido leve e macio.
+                        O kit é composto por quatro bodies lisos e básicos.
+                        Os bodies possuem ombros expansíveis, que facilitam o vestir da peça,
+                        mangas longas e fechamento entrepernas com botões de pressão niquel-free.
+                        Delicados o Kit deixará seu pequeno pronto para qualquer ocasião.</p>
+                </div>
+                <div id="pagamento" class="tab-pane">
+                </div>
+                <div id="comentarios" class="tab-pane">
+                </div>
+                <div id="tabela-medidas" class="tab-pane">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="secao-comentarios">
+            <div id="comentario-botao">
+                <h3>Comentários</h3>
+                <div class="dropdown-button">
+                    <p>Classificar por:</p>
+                    <div id="botoes-select">
+                        <p id="mainButton" class="btn" onclick="toggleDropdown()">Mais recentes<img src="/assets/icon-abrir-link.svg" alt=""></p>
+                        <div id="options" class="dropdown-options" style="display: none;">
+                            <p id="option1" class="option" onclick="swapButton('Mais antigos')">Mais antigos</p>
+                            <p id="option2" class="option" onclick="swapButton('Mais relevantes')">Mais relevantes</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <input type="text" id="input-comentario" placeholder="Escreva um comentário aqui...">
+            <button type="button" class="btn btn-link" id="botao-publicar-comentario">Publicar comentário</button>
+            <div class="comentarios">
+                <div id="imagem-comentarios"><img src="/assets/foto-usuario.jpg" alt=""></div>
+                <div id="texto-comentarios">
+                    <div id="nome-usuario-e-data-horario">
+                        <p id="nome-usuario">Rudi Duarte</p>
+                        <p>12/03/2020 - 18:52</p>
+                    </div>
+
+                    <p>O Kit Bodies Manga Longa Basics Carters 4 peças é produzido em algodão com tecido leve e macio.
+                        O kit é composto por quatro bodies lisos e básicos. Os bodies possuem ombros expansíveis,
+                        que facilitam o vestir da peça, mangas longas e fechamento entrepernas com botões de pressão
+                        niquel-free.
+                        Delicados o Kit deixará seu pequeno pronto para qualquer ocasião.</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <section class="card-grid">
+            <h2>Produtos relacionados</h2>
+            <div class="grid-container">
+                <article class="card">
+                    <div class="image-container">
+                        <img src="/assets/imagemCards.png" alt="Produto">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM
+                                    ESTOQUE</strong> </button>
+                            <button type="button" class="btn btn-info"
+                                id="botao-oferta-card"><strong>OFERTA</strong></button>
+                        </div>
+                        <div class="hover-buttons">
+                            <a href="./item.html"><button type="button" class="btn">Que fofo, eu quero!</button></a>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                                    id="icon-favorito"></button>
+                            <a href="./item.html"><button type="button" class="btn btn-link"><img
+                                        src="/assets/icon-ver.svg" id="icon-ver"></button></a>
+                        </div>
+                    </div>
+                    <h4>Kit Bodies manga longa carters 4 peças</h4>
+                    <button type="button" class="btn btn-info">34% OFF</button>
+                    <p>R$114,90</p>
+                    <h1>R$75,90</h1>
+                    <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+                    <div class="hover-buttons-mobile">
+                        <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <img src="/assets/imagemCards.png" alt="Produto">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM
+                                    ESTOQUE</strong> </button>
+                            <button type="button" class="btn btn-info"
+                                id="botao-oferta-card"><strong>OFERTA</strong></button>
+                        </div>
+                        <div class="hover-buttons">
+                            <button type="button" class="btn">Que fofo, eu quero!</button>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                                    id="icon-favorito"></button>
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg"
+                                    id="icon-ver"></button>
+                        </div>
+                    </div>
+                    <h4>Kit Bodies manga longa carters 4 peças</h4>
+                    <button type="button" class="btn btn-info">34% OFF</button>
+                    <p>R$114,90</p>
+                    <h1>R$75,90</h1>
+                    <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+                    <div class="hover-buttons-mobile">
+                        <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <img src="/assets/imagemCards.png" alt="Produto">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM
+                                    ESTOQUE</strong> </button>
+                            <button type="button" class="btn btn-info"
+                                id="botao-oferta-card"><strong>OFERTA</strong></button>
+                        </div>
+                        <div class="hover-buttons">
+                            <button type="button" class="btn">Que fofo, eu quero!</button>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                                    id="icon-favorito"></button>
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg"
+                                    id="icon-ver"></button>
+                        </div>
+                    </div>
+                    <h4>Kit Bodies manga longa carters 4 peças</h4>
+                    <button type="button" class="btn btn-info">34% OFF</button>
+                    <p>R$114,90</p>
+                    <h1>R$75,90</h1>
+                    <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+                    <div class="hover-buttons-mobile">
+                        <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="image-container">
+                        <img src="/assets/imagemCards.png" alt="Produto">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM
+                                    ESTOQUE</strong> </button>
+                            <button type="button" class="btn btn-info"
+                                id="botao-oferta-card"><strong>OFERTA</strong></button>
+                        </div>
+                        <div class="hover-buttons">
+                            <button type="button" class="btn">Que fofo, eu quero!</button>
+                        </div>
+                        <div class="bottom-buttons">
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
+                                    id="icon-favorito"></button>
+                            <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg"
+                                    id="icon-ver"></button>
+                        </div>
+                    </div>
+                    <h4>Kit Bodies manga longa carters 4 peças</h4>
+                    <button type="button" class="btn btn-info">34% OFF</button>
+                    <p>R$114,90</p>
+                    <h1>R$75,90</h1>
+                    <p id="secao-parcela">3X de R$25,30 Sem juros</p>
+                    <div class="hover-buttons-mobile">
+                        <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
+                    </div>
+                </article>
+
+    </main>
+
+    <footer>
+        <div class="newsletter">
+            <div class="titulo-newsletter">
+                <i class="bi bi-envelope-open" id="newsletter-logo"></i>
+                <h3>Nossa Newsletter</h3>
+            </div>
+            <input type="email" placeholder="E-mail">
+            <input type="text" placeholder="Nome completo">
+            <button type="button" class="btn btn-primary" id="botao-newsletter">Me inscrever
+                <img src="/assets/icon-newsletter.svg" alt="">
+            </button>
+        </div>
+
+        <!-- Primeira divisão com 4 seções -->
+        <div class="secao-1-footer">
+            <section>
+                <h5>Meninos</h5>
+                <ul>
+                    <li><a href="#">Bodies</a></li>
+                    <li><a href="#">Conjuntos</a></li>
+                    <li><a href="#">Macacões</a></li>
                 </ul>
-              </a>
-            </li>
-          </ul>
-          <ul>
-            <li class="menu-item">
-              <a class="dropdown-btn">Minha conta <img src="/assets/icon-abrir-link.svg" alt=""></a>
-              <ul class="submenu">
-                <li><a href="#"><img src="/assets/icon-registro.svg" class="icones-submenu"></i>Criar conta<img
-                      src="/assets/icon-abrir-link.svg" alt=""></a></li>
-                <li><a href="#"><img src="/assets/icon-login.svg" class="icones-submenu"></i>Entrar<img
-                      src="/assets/icon-abrir-link.svg" alt=""></a></li>
-              </ul>
-              </a>
-            </li>
-          </ul>
-
-        </nav>
-        <div id="carrinho">
-          <a href="#"><img src="/assets/icon-carrinho-btn.svg" alt=""></a>
-          <ul class="submenu">
-            <li><a href="#">Item</a></li>
-            <div class="total-compra">
-              <p>Total:</p>
-              <p>R$450,00</p>
-            </div>
-            <div class="botoes-compra">
-              <button type="button" class="btn btn-primary">Ver carrinho</button>
-              <button type="button" class="btn btn-primary">Comprar</button>
-            </div>
-          </ul>
+            </section>
+            <section>
+                <h5>Meninas</h5>
+                <ul>
+                    <li><a href="#">Bodies</a></li>
+                    <li><a href="#">Conjuntos</a></li>
+                    <li><a href="#">Macacões</a></li>
+                </ul>
+            </section>
+            <section>
+                <h5>Acessórios</h5>
+                <ul>
+                    <li><a href="#">Brinquedos/Mordedores</a></li>
+                    <li><a href="#">Chupetas</a></li>
+                    <li><a href="#">Cobertores/Mantas</a></li>
+                    <li><a href="#">Babá Eletrônica/Termômetros</a></li>
+                    <li><a href="#">Segurança</a></li>
+                    <li><a href="#">Skip Hop</a></li>
+                </ul>
+            </section>
+            <section>
+                <h5>Alimentação</h5>
+                <ul>
+                    <li><a href="#">Mamadeiras</a></li>
+                    <li><a href="#">Utensílios</a></li>
+                    <li><a href="#">Vitaminas</a></li>
+                </ul>
+            </section>
         </div>
 
+        <!-- Segunda divisão com 3 seções -->
+        <div class="secao-2-footer">
+            <section>
+                <h5>Higiene e cuidados<br>com o bebê</h5>
+                <ul>
+                    <li><a href="#">Banho</a></li>
+                    <li><a href="#">Cólicas</a></li>
+                    <li><a href="#">Alívio de gripes e resfriados</a></li>
+                    <li><a href="#">Pele</a></li>
+                    <li><a href="#">Dentes</a></li>
+                </ul>
+            </section>
+            <section>
+                <h5>Mamãe</h5>
+                <ul>
+                    <li><a href="#">Gravidez</a></li>
+                    <li><a href="#">Amamentação</a></li>
+                </ul>
+            </section>
+            <section>
+                <h5>Ofertas</h5>
+            </section>
+            <section>
+                <h5>Institucional</h5>
+                <ul>
+                    <li><a href="#">Página inicial</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Criar conta</a></li>
+                    <li><a href="#">Entrar</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="redes-sociais">
+            <a href="">
+                <img src="/assets/icon-facebook.svg" alt="">
 
-      </div>
+            </a>
+            <a href="">
+                <img src="/assets/icon-instagram.svg" alt="">
 
-      <!-- Seção inferior: Botões e links de navegação -->
-      <nav class="menu">
-        <div id="menu-contraido">
-          <!-- Checkbox que controla a exibição do menu -->
-          <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle">
-            <!-- Ícone de hambúrguer -->
-            <span></span>
-          </label>
-          <ul>
-            <li class="menu-item-nav-principal">
-              <a href="#">Meninas</a>
-              <ul class="submenu">
-                <div class="submenu-content">
-                  <li>
-                    <ul class="submenu-links">
-                      <li class="has-sub-options">
-                        <a href="#">Bodies <img src="/assets/icon-abrir-link.svg" alt=""></a>
-                        <div class="sub-options">
-                          <a href="#">Manga curta </a>
-                          <a href="#">Manga longa </a>
-                        </div>
-                      </li>
-                      <li><a href="#">Conjuntos</a></li>
-                      <li><a href="#">Macacões</a></li>
-                    </ul>
-                  </li>
-                  <div class="submenu-image">
-                    <img src="/assets/imagem-bebe.jpg" alt="Imagem de bebê">
-                  </div>
+            </a>
+        </div>
+        </div>
+        <section class="infos-centrais-home">
+            <div class="info-secao-central">
+                <img src="/assets/icon-boleto.svg" alt="Ícone boleto">
+                <div>
+                    <h3>Pagamento por boleto</h3>
+                    <p>Mais um meio de pagamento para facilitar</p>
                 </div>
-              </ul>
-            </li>
 
-
-            <li class="menu-item-nav-principal">
-              <a href="#">Meninos</a>
-              <ul class="submenu">
-                <div class="submenu-content">
-                  <li>
-                    <ul class="submenu-links">
-                      <li class="has-sub-options">
-                        <a href="#">Bodies <img src="/assets/icon-abrir-link.svg" alt=""></a>
-                        <div class="sub-options">
-                          <a href="#">Manga curta </a>
-                          <a href="#">Manga longa </a>
-                        </div>
-                      </li>
-                      <li><a href="#">Conjuntos</a></li>
-                      <li><a href="#">Macacões</a></li>
-                    </ul>
-                  </li>
-                  <div class="submenu-image">
-                    <img src="/assets/imagem-bebe.jpg" alt="Imagem de bebê">
-                  </div>
+            </div>
+            <div class="info-secao-central">
+                <img src="/assets/icon-cartao.svg" alt="Ícone cartão">
+                <div>
+                    <h3>Até 3 vezes</h3>
+                    <p>Com todos os cartões de crédito</p>
                 </div>
-              </ul>
-            </li>
-            <li><a href="#">Acessórios</a></li>
-            <li><a href="#">Alimentação</a></li>
-            <li><a href="#">Higiene</a></li>
-            <li><a href="#">Mamãe</a></li>
-            <li><a href="#">Ofertas</a></li>
-          </ul>
-        </div>
-      </nav>
 
-    </div>
-  </header>
+            </div>
+            <div class="info-secao-central">
+                <img src="/assets/icon-seguranca.svg" alt="Ícone segurança">
+                <div>
+                    <h3>Site Seguro</h3>
+                    <p>Protegemos seus dados</p>
+                </div>
+            </div>
+        </section>
+        <p id="copyright">Copyright Primeira Moda Roupas e Produtos Importados Ltda - 2020.
+            Todos os direitos reservados.
+        </p>
+        <section class="botoes-rodape-mobile">
+            <div>
 
-  <main>
-    
-    
-    <section class="card-grid">
-      <h2>Destaques</h2>
-      <div class="grid-container">
-        <article class="card">
-          <div class="image-container">
-            <img src="/assets/imagemCards.png" alt="Produto">
-            <div class="button-group">
-              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
-              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
-            </div>
-            <div class="hover-buttons">
-              <a href="./item.html"><button type="button" class="btn">Que fofo, eu quero!</button></a>
-            </div>
-            <div class="bottom-buttons">
-              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
-                  id="icon-favorito"></button>
-              <a href="./item.html"><button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button></a>
-            </div>
-          </div>
-          <h4>Kit Bodies manga longa carters 4 peças</h4>
-          <button type="button" class="btn btn-info">34% OFF</button>
-          <p>R$114,90</p>
-          <h1>R$75,90</h1>
-          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
-          <div class="hover-buttons-mobile">
-            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="image-container">
-            <img src="/assets/imagemCards.png" alt="Produto">
-            <div class="button-group">
-              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
-              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
-            </div>
-            <div class="hover-buttons">
-              <button type="button" class="btn">Que fofo, eu quero!</button>
-            </div>
-            <div class="bottom-buttons">
-              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
-                  id="icon-favorito"></button>
-              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
-            </div>
-          </div>
-          <h4>Kit Bodies manga longa carters 4 peças</h4>
-          <button type="button" class="btn btn-info">34% OFF</button>
-          <p>R$114,90</p>
-          <h1>R$75,90</h1>
-          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
-          <div class="hover-buttons-mobile">
-            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="image-container">
-            <img src="/assets/imagemCards.png" alt="Produto">
-            <div class="button-group">
-              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
-              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
-            </div>
-            <div class="hover-buttons">
-              <button type="button" class="btn">Que fofo, eu quero!</button>
-            </div>
-            <div class="bottom-buttons">
-              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
-                  id="icon-favorito"></button>
-              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
-            </div>
-          </div>
-          <h4>Kit Bodies manga longa carters 4 peças</h4>
-          <button type="button" class="btn btn-info">34% OFF</button>
-          <p>R$114,90</p>
-          <h1>R$75,90</h1>
-          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
-          <div class="hover-buttons-mobile">
-            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
-          </div>
-        </article>
-        <article class="card">
-          <div class="image-container">
-            <img src="/assets/imagemCards.png" alt="Produto">
-            <div class="button-group">
-              <button type="button" class="btn btn-info" id="botao-sem-estoque"><strong>SEM ESTOQUE</strong> </button>
-              <button type="button" class="btn btn-info" id="botao-oferta-card"><strong>OFERTA</strong></button>
-            </div>
-            <div class="hover-buttons">
-              <button type="button" class="btn">Que fofo, eu quero!</button>
-            </div>
-            <div class="bottom-buttons">
-              <button type="button" class="btn btn-link"><img src="/assets/icon-favorito.svg"
-                  id="icon-favorito"></button>
-              <button type="button" class="btn btn-link"><img src="/assets/icon-ver.svg" id="icon-ver"></button>
-            </div>
-          </div>
-          <h4>Kit Bodies manga longa carters 4 peças</h4>
-          <button type="button" class="btn btn-info">34% OFF</button>
-          <p>R$114,90</p>
-          <h1>R$75,90</h1>
-          <p id="secao-parcela">3X de R$25,30 Sem juros</p>
-          <div class="hover-buttons-mobile">
-            <a href=""><button type="button" class="btn">Que fofo, eu quero!</button></a>
-          </div>
-        </article>
-        
-  </main>
+                <ul class="accordion-menu">
+                    <li>
+                        <div class="dropdownlink">
+                            <h3>Institucional</h3>
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                            <i class="bi bi-dash" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Fale Conosco</a></li>
+                        </ul>
 
-  <footer>
-    <div class="newsletter">
-      <div class="titulo-newsletter">
-        <i class="bi bi-envelope-open" id="newsletter-logo"></i>
-        <h3>Nossa Newsletter</h3>
-      </div>
-      <input type="email" placeholder="E-mail">
-      <input type="text" placeholder="Nome completo">
-      <button type="button" class="btn btn-primary" id="botao-newsletter">Me inscrever
-        <img src="/assets/icon-newsletter.svg" alt="">
-      </button>
-    </div>
+                    </li>
+                    <li>
+                        <div class="dropdownlink">
+                            <h3>Minha conta</h3>
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                            <i class="bi bi-dash" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Criar conta</a></li>
+                            <li><a href="#">Entrar</a></li>
+                        </ul>
 
-    <!-- Primeira divisão com 4 seções -->
-    <div class="secao-1-footer">
-      <section>
-        <h5>Meninos</h5>
-        <ul>
-          <li><a href="#">Bodies</a></li>
-          <li><a href="#">Conjuntos</a></li>
-          <li><a href="#">Macacões</a></li>
-        </ul>
-      </section>
-      <section>
-        <h5>Meninas</h5>
-        <ul>
-          <li><a href="#">Bodies</a></li>
-          <li><a href="#">Conjuntos</a></li>
-          <li><a href="#">Macacões</a></li>
-        </ul>
-      </section>
-      <section>
-        <h5>Acessórios</h5>
-        <ul>
-          <li><a href="#">Brinquedos/Mordedores</a></li>
-          <li><a href="#">Chupetas</a></li>
-          <li><a href="#">Cobertores/Mantas</a></li>
-          <li><a href="#">Babá Eletrônica/Termômetros</a></li>
-          <li><a href="#">Segurança</a></li>
-          <li><a href="#">Skip Hop</a></li>
-        </ul>
-      </section>
-      <section>
-        <h5>Alimentação</h5>
-        <ul>
-          <li><a href="#">Mamadeiras</a></li>
-          <li><a href="#">Utensílios</a></li>
-          <li><a href="#">Vitaminas</a></li>
-        </ul>
-      </section>
-    </div>
+                    </li>
+                    <li>
+                        <div class="dropdownlink">
+                            <h3>Fale Conosco</h3>
+                            <i class="bi bi-plus" aria-hidden="true"></i>
+                            <i class="bi bi-dash" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Contato</a></li>
+                        </ul>
 
-    <!-- Segunda divisão com 3 seções -->
-    <div class="secao-2-footer">
-      <section>
-        <h5>Higiene e cuidados<br>com o bebê</h5>
-        <ul>
-          <li><a href="#">Banho</a></li>
-          <li><a href="#">Cólicas</a></li>
-          <li><a href="#">Alívio de gripes e resfriados</a></li>
-          <li><a href="#">Pele</a></li>
-          <li><a href="#">Dentes</a></li>
-        </ul>
-      </section>
-      <section>
-        <h5>Mamãe</h5>
-        <ul>
-          <li><a href="#">Gravidez</a></li>
-          <li><a href="#">Amamentação</a></li>
-        </ul>
-      </section>
-      <section>
-        <h5>Ofertas</h5>
-      </section>
-      <section>
-        <h5>Institucional</h5>
-        <ul>
-          <li><a href="#">Página inicial</a></li>
-          <li><a href="#">Quem Somos</a></li>
-          <li><a href="#">Fale Conosco</a></li>
-          <li><a href="#">Criar conta</a></li>
-          <li><a href="#">Entrar</a></li>
-        </ul>
-      </section>
-    </div>
-    <div class="redes-sociais">
-      <a href="">
-        <img src="/assets/icon-facebook.svg" alt="">
+                    </li>
+                    <div class="redes-sociais-mobile">
+                        <h3>Redes Sociais</h3>
+                        <div class="logos-redes-sociais-mobile">
+                            <a href="">
+                                <img src="/assets/icon-facebook.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/assets/icon-instagram.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
 
-      </a>
-      <a href="">
-        <img src="/assets/icon-instagram.svg" alt="">
+        </section>
+    </footer>
 
-      </a>
-    </div>
-    </div>
-    <section class="infos-centrais-home">
-      <div class="info-secao-central">
-        <img src="/assets/icon-boleto.svg" alt="Ícone boleto">
-        <div>
-          <h3>Pagamento por boleto</h3>
-          <p>Mais um meio de pagamento para facilitar</p>
-        </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        const addButton = document.querySelector('.add');
+        const removeButton = document.querySelector('.remove');
+        const numberDisplay = document.querySelector('.number');
 
-      </div>
-      <div class="info-secao-central">
-        <img src="/assets/icon-cartao.svg" alt="Ícone cartão">
-        <div>
-          <h3>Até 3 vezes</h3>
-          <p>Com todos os cartões de crédito</p>
-        </div>
+        let count = 0;
 
-      </div>
-      <div class="info-secao-central">
-        <img src="/assets/icon-seguranca.svg" alt="Ícone segurança">
-        <div>
-          <h3>Site Seguro</h3>
-          <p>Protegemos seus dados</p>
-        </div>
-      </div>
-    </section>
-    <p id="copyright">Copyright Primeira Moda Roupas e Produtos Importados Ltda - 2020.
-      Todos os direitos reservados.
-    </p>
-    <section class="botoes-rodape-mobile">
-      <div>
-        <a href="">
-          <h3>Institucional</h3><i class="bi bi-plus"></i>
-        </a>
-      </div>
-      <div>
-        <a href="">
-          <h3>Minha Conta</h3><i class="bi bi-plus"></i>
-        </a>
-      </div>
-      <div>
-        <a href="">
-          <h3>Fale Conosco</h3><i class="bi bi-plus"></i>
-        </a>
-      </div>
-      <div class="redes-sociais-mobile">
-        <h3>Redes Sociais</h3>
-        <div class="logos-redes-sociais-mobile">
-          <a href="">
-            <img src="/assets/icon-facebook.svg" alt="">
-          </a>
-          <a href="">
-            <img src="/assets/icon-instagram.svg" alt="">
-          </a>
-        </div>
+        addButton.addEventListener('click', () => {
+            count++;
+            numberDisplay.textContent = count;
+        });
 
-      </div>
-    </section>
-  </footer>
+        removeButton.addEventListener('click', () => {
+            if (count > 0) {
+                count--;
+                numberDisplay.textContent = count;
+            }
+        });
+        document.querySelectorAll('.nav-tab a').forEach(tab => {
+            tab.addEventListener('click', function (event) {
+                event.preventDefault();
 
-  <script>
-    // Script para o menu hamburguer (se necessário adicionar funcionalidade futuramente)
-  </script>
+                // Remove a classe ativa de todas as abas e seções
+                document.querySelectorAll('.nav-tab').forEach(item => item.classList.remove('active'));
+                document.querySelectorAll('.tab-pane').forEach(content => content.classList.remove('active'));
+
+                // Adiciona a classe ativa à aba e à seção atual
+                const targetPane = document.querySelector(this.getAttribute('href'));
+                this.parentElement.classList.add('active');
+                targetPane.classList.add('active');
+            });
+        });
+        function swapButton(selectedOption) {
+            const mainButton = document.getElementById('mainButton');
+            const option1 = document.getElementById('option1');
+            const option2 = document.getElementById('option2');
+
+            // Atualiza o botão principal com a opção selecionada
+            mainButton.innerText = selectedOption;
+
+            // Define as opções alternativas com base na opção selecionada
+            if (selectedOption === 'Mais antigos') {
+                option1.innerText = 'Mais recentes';
+                option2.innerText = 'Mais relevantes';
+            } else if (selectedOption === 'Mais recentes') {
+                option1.innerText = 'Mais antigos';
+                option2.innerText = 'Mais relevantes';
+            } else if (selectedOption === 'Mais relevantes') {
+                option1.innerText = 'Mais antigos';
+                option2.innerText = 'Mais recentes';
+            }
+        }
+
+        // Lógica para exibir as opções e permitir a troca
+        document.getElementById('mainButton').addEventListener('click', function () {
+            const dropdown = document.getElementById('options');
+            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+        });
+
+
+
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                // more then one submenu open?
+                this.multiple = multiple || false;
+
+                var dropdownlink = this.el.find('.dropdownlink');
+                dropdownlink.on('click',
+                    { el: this.el, multiple: this.multiple },
+                    this.dropdown);
+            };
+
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el,
+                    $this = $(this),
+                    //this is the ul.submenuItems
+                    $next = $this.next();
+
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
+
+                if (!e.data.multiple) {
+                    //show only one menu at the same time
+                    $el.find('.submenuItems').not($next).slideUp().parent().removeClass('open');
+                }
+            }
+
+            var accordion = new Accordion($('.accordion-menu'), false);
+        })
+
+
+    </script>
+
 </body>
 
 </html>
